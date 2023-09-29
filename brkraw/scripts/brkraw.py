@@ -213,10 +213,10 @@ def main():
             # raise error with message if the folder is empty (or does not contains any PvDataset)
             print(invalid_error_message, empty_folder)
             raise InvalidApproach(invalid_error_message)
-        if BrukerLoader(path).is_pvdataset:
-            # raise error if the input path is identified as PvDataset
-            print(invalid_error_message, wrong_target)
-            raise InvalidApproach(invalid_error_message)
+        #if BrukerLoader(path).is_pvdataset:
+        #    # raise error if the input path is identified as PvDataset
+        #    print(invalid_error_message, wrong_target)
+        #    raise InvalidApproach(invalid_error_message)
 
         base_path = args.output
         if not base_path:
